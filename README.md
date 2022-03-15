@@ -33,4 +33,4 @@ Note: This project is not connected to any database. Here I manage data with str
 ### TODO
 
 - [ ] Delete All movies
-- [ ] Add Dockerfile
+- [x] Add Dockerfile
