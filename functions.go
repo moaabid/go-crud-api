@@ -72,4 +72,12 @@ func updateMovies(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(movies)
 }
 
-//TODO Add a function to delete all movies
+func deleteAllMovies(w http.ResponseWriter, r *http.Request) {
+
+	w.Header().Set("Content-Type", "application/json")
+
+	movies = movies[:0]
+
+	json.NewEncoder(w).Encode(movies)
+
+}

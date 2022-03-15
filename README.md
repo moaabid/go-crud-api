@@ -30,7 +30,17 @@ Note: This project is not connected to any database. Here I manage data with str
   }
 - DELETE <http://localhost:8080/movies/1>
 
+### API
+
+```
+# create docker image
+docker build -t go-crud-api . 
+
+# run docker image
+docker run -p 8080:8080 -it go-crud-api    
+```
+
 ### TODO
 
-- [ ] Delete All movies
+- [x] Delete All movies
 - [x] Add Dockerfile
